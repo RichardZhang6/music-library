@@ -1,0 +1,23 @@
+{% extends 'layout.html' %} {% block content %}
+<body>
+    <div id="buttons">
+    <button class="btn-general" onclick="location.href='{{first_page_url}}'">First</button>
+    <button class="btn-general" onclick="location.href='{{next_page_url}}'">Next</button>
+        {% if prev_article_url is not none %}
+            <button class="btn-general" onclick="location.href='{{prev_page_url}}'">Previous</button>
+        {% else %}
+            <button class="btn-general-disabled" disabled>Previous</button>
+        {% endif %}
+    <button class="btn-general" onclick="location.href='{{last_page_url}}'">Last</button>
+    </div>
+
+
+    {% for track in tracks %}
+    <div id="browse">
+    <h4>Track Title: {{track.track_title}}</h4>
+    <button class="btn-general"onclick="location.href='{{url_for('tracks_bp.track_by_id', id=track.track_id)}}'">details</button>
+    </div>
+
+    {% endfor %}
+</body>
+{% endblock %}

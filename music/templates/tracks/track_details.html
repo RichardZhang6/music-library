@@ -1,0 +1,41 @@
+{% extends 'layout.html' %} {% block content %}
+<body id="container">
+<div id="reviews">
+    <h4>Reviews:</h4>
+    {% if (track.reivews|length) == 0 %}
+    <p id="para">Be the first one to make a review!</p></br>
+    {% endif %}
+            {% for review in track.reviews %}
+                <p id="para">Rating at {{review.rating}}</br>{{review.review_text}}, by {{review.user.user_name}}</br>{{review.timestamp}}</p>
+            {% endfor %}
+    <button class="btn-general" onclick="location.href='{{track.add_review_url}}'">Review on Track</button>
+</div>
+
+<div id="details">
+    <span>{{track.track_title}}</span>
+    <table>
+        <tr>
+            <th><h4>Artist Name</h4></th><td><p>{{track.artist.full_name}}</p></td>
+            </tr>
+        <tr>
+            <th><h4>Album Name</h4></th><td><p>{{track.album.title}}</p></td>
+        </tr>
+        <tr>
+            <th><h4>Genre Type</h4></th>
+            {% for genre in track.genres %}
+            <td><p>{{genre.name}}</p></td>
+            {% endfor %}
+        </tr>
+        <tr>
+            <th><h4>Link</h4></th><td><a href="{{track.track_url}}">Link</a></td>
+        </tr>
+        </table>
+    <audio controls>
+        <source src="{{track.track_url}}">
+    </audio>
+    </br>
+
+</div>
+
+</body>
+{% endblock %}

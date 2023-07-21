@@ -1,0 +1,13 @@
+{% extends 'layout.html' %} {% block content %}
+<main id = "main" >
+        <div id="homecon">
+<h1 class = "heading">235 Music Library</h1>
+<button class="btn-nav" onclick="location.href='{{url_for('tracks_bp.tracks_by_page', page = 1)}}'" >
+        Browse
+</button>
+        <button class="btn-general"onclick="location.href='{{url_for('authentication_bp.login')}}'">Login</button>
+        <button class="btn-general"onclick="location.href='{{url_for('authentication_bp.logout')}}'">Logout</button>
+        <button class="btn-general"onclick="location.href='{{url_for('authentication_bp.register')}}'">Register</button>
+                </div>
+</main>
+{% endblock %}

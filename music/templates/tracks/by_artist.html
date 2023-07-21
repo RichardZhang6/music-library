@@ -1,0 +1,11 @@
+{% extends 'layout.html' %} {% block content %}
+<main id="main">
+<h2 style="margin-left: 250px">Searching for {{search}} by Artist Name</h2>
+{% for track in tracks %}
+<div id="show">
+<h4>Track Title: {{track.track_title}}</h4>
+    <button class="btn-general"onclick="location.href='{{url_for('tracks_bp.track_by_id', id=track.track_id)}}'">details</button>
+</div>
+{% endfor %}
+</main>
+{% endblock %}

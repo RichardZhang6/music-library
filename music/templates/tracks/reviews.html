@@ -1,0 +1,27 @@
+{% extends 'layout.html' %} {% block content %}
+<main id="main">
+<div class="form-wrapper">
+            <form action="{{handler_url}}" method="post">
+                {{form.track_id}} <!-- Need to include this hidden field as it tracks the article being commented. -->
+                {{form.csrf_token}} <!-- Need to include this token - Flask WTForms requires it. -->
+                </br>
+                <div class ="form-field">{{form.review.label}} </br>{{form.review(size = 100, placeholder="type your review", class="textarea", cols="50", rows="6", wrap="hard")}}</br>
+                {{form.rating.label}}
+                    </br>
+                    {{form.rating(placeholder="Rating")}}
+                    {% if form.review.errors %}
+                        <ul class="errors">
+        	            {% for error in form.review.errors %}
+        		            <li>{{error}}</li>
+                        {% endfor %}
+                        </ul>
+                    {% endif %}
+
+                </div>
+                {{ form.submit }}
+            </form>
+</div>
+</main>
+
+
+{% endblock %}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>235 Music Library</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+
+  </head>
+
+
+  <body>
+        {% include 'navigation.html' %}
+
+        <div id="container">
+
+          <!-- Main content block to be supplied by page. -->
+          {% block content %} {% endblock %}
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

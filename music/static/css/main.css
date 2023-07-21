@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+
+#container, main {
+    background-image: url("viny.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: block;
+    margin-top: 0;
+    height: 100%;
+}
+
+body {
+    margin-top:0;
+    margin-left:0;
+    margin-bottom:0;
+    margin-right:0;
+}
+
+#main {
+  position: fixed;
+  font-family: "Copperplate";
+    width: 100%;
+}
+
+#header1 {
+    margin-left: 250px;
+}
+.heading {
+    color: #717171;
+    font-size: 60px;
+
+}
+#homecon {
+    margin-left: 400px;
+    margin-top: 300px;
+}
+
+.btn-nav, .btn-general {
+    transition-duration: 0.4s;
+    font-size:20px;
+    font-family: "Copperplate";
+    margin-bottom: 20px;
+}
+
+.btn-nav:hover, .btn-general:hover {
+    background-color: #A4B0F5;
+    color: while;
+}
+#track {
+    color: #717171;
+
+}
+
+#nav {
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background: rgba(245, 143, 41, 0.9);
+  padding: 0px 0px;
+  position: fixed;
+  margin-left: 0;
+  padding-left: 0;
+  margin: 0px, 0px;
+  z-index: 99;
+}
+
+#nav-header {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 12px;
+}
+
+#sub-nav-header {
+  color: #fff;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+#show {
+    height: 100px;
+    margin-left: 250px;
+    margin-top: 0;
+    padding: 0px 0px;
+    margin: 0px, 0px;
+}
+
+#details {
+    margin-left: 200px;
+    padding-left: 50px;
+    width: 45%;
+    height: auto;
+    background-color: rgba(245, 143, 41, 0.3);
+}
+
+#sbar {
+    margin-right: 100px;
+    margin-left: 0;
+}
+
+.formwrapper {
+    color: white;
+    margin-left: 540px;
+    margin-top: 300px;
+}
+
+.form-wrapper {
+    margin-left: 540px;
+    margin-top: 300px;
+    color: white;
+}
+
+#buttons {
+    top: 0;
+    width: 120px;
+    margin-left: 1200px;
+    position: fixed;
+}
+
+#nav-button {
+    padding: 5px 5px;
+    height: 100px;
+
+}
+
+.nav {
+    font-size:30px;
+    font-family: "Copperplate";
+    height: 50px;
+    text-decoration: none;
+}
+
+
+input[type='search'] {
+    width: 200px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+}
+button[type='submit'] {
+    width: 100%;
+     background-color: #7532cd;
+     color: white;
+     padding: 14px 20px;
+     margin: 8px 0;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+}
+#browse {
+    margin-left: 250px;
+    height: 100%;
+    margin-top: 0;
+}
+
+h4 {
+    padding-top: 0px;
+    margin-top: 0px;
+    color: #F7F9F9;
+    font-family: 'Peralta', cursive;
+    font-size: 20px;
+}
+
+#details {
+    top: 0px;
+    margin-top:0;
+    margin: 0px;
+    padding-left: 250px;
+    float: left;
+}
+
+#reviews {
+    margin:0px;
+    padding-right: 100px;
+    padding-top:0px;
+    float: right;
+}
+
+#para {
+    margin:5px;
+}
+
+span{
+  top: 0;
+  left: 250px;
+  width: 400px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  font-size:60px;
+    letter-spacing:0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 5px 5px #FFB100,
+			    11px 9px #000000;
+}
+
+p {
+    font-family:Copperplate;
+    font-size: 20px;
+    width: 100%;
+    border-style: outset;
+    border-radius:5px;
+    border-color: white black black white;
+    border-width: 5px;
+    color: white;
+}
+
