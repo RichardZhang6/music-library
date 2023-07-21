@@ -16,7 +16,7 @@ class Config:
     SECRET_KEY = environ.get('SECRET_KEY')
     REPOSITORY = environ.get('REPOSITORY')
 
-    TESTING = environ.get('TESTING')
+    # TESTING = environ.get('TESTING')
     # Database configuration
     SQLALCHEMY_DATABASE_URI = environ.get('SQLALCHEMY_DATABASE_URI')
 
